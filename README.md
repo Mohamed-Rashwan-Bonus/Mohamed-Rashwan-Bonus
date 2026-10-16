@@ -14,8 +14,6 @@
   <img src="./assets/solar-system.svg" alt="Animated solar system orbiting CODE" width="100%" />
 </p>
 
-> ☝️ دي مش صورة — ده نظام شمسي حي: 5 كواكب بتلف حوالين شمس الكود + شهاب بيعدي + صاروخ طاير. كله SVG متحرك بدون أي مكتبة.
-
 <p align="center">
   <a href="https://github.com/Mohamed-Rashwan-Bonus?tab=repositories"><img src="https://img.shields.io/badge/🪐_EXPLORE-all--galaxies-06B6D4?style=for-the-badge" /></a>
 </p>
