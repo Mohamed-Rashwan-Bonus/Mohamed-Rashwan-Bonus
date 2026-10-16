@@ -11,6 +11,12 @@
 </p>
 
 <p align="center">
+  <img src="./assets/solar-system.svg" alt="Animated solar system orbiting CODE" width="100%" />
+</p>
+
+> ☝️ دي مش صورة — ده نظام شمسي حي: 5 كواكب بتلف حوالين شمس الكود + شهاب بيعدي + صاروخ طاير. كله SVG متحرك بدون أي مكتبة.
+
+<p align="center">
   <a href="https://github.com/Mohamed-Rashwan-Bonus?tab=repositories"><img src="https://img.shields.io/badge/🪐_EXPLORE-all--galaxies-06B6D4?style=for-the-badge" /></a>
 </p>
 
@@ -39,6 +45,18 @@ const commander = {
   <br/>
   <img src="https://skillicons.dev/icons?i=flutter,dart,firebase,docker,linux,figma,md,powershell&theme=dark&perline=8" alt="stack2" />
 </p>
+
+### 🌌 Skills as Planets — كل مهارة كوكب
+
+| Orbit | Planet | Skill | Why this planet? |
+|-------|--------|-------|------------------|
+| ☿ 58M km — أسرع واحد | **JavaScript** | `console.log("warp")` | سريع وموجود في كل حتة |
+| ♀ 88M km — الألمع | **Python** | `import universe` | لامع ونضيف وبيحل أي حاجة |
+| 🌍 122M km — البيت | **React + HTML/CSS** | `<Home />` | هنا عايش اليوزر |
+| ♂ 158M km — المحارب | **Node.js + Git** | `git push --force-the-future` | محارب الـ backend |
+| ♄ 196M km — الملك | **Flutter + Firebase** | `king.deploy()` | كبير وعنده حلقات (ecosystem) |
+
+> الشمس في النص مكتوب عليها **CODE** — كل الكواكب بتلف حواليها. زي شغلي بالظبط.
 
 ---
 
