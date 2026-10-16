@@ -48,15 +48,17 @@ const commander = {
 
 ### 🌌 Skills as Planets — كل مهارة كوكب
 
-| Orbit | Planet | Skill | Why this planet? |
-|-------|--------|-------|------------------|
-| ☿ 58M km — أسرع واحد | **JavaScript** | `console.log("warp")` | سريع وموجود في كل حتة |
-| ♀ 88M km — الألمع | **Python** | `import universe` | لامع ونضيف وبيحل أي حاجة |
-| 🌍 122M km — البيت | **React + HTML/CSS** | `<Home />` | هنا عايش اليوزر |
-| ♂ 158M km — المحارب | **Node.js + Git** | `git push --force-the-future` | محارب الـ backend |
-| ♄ 196M km — الملك | **Flutter + Firebase** | `king.deploy()` | كبير وعنده حلقات (ecosystem) |
+| Orbit | Planet | Skill | Power |
+|-------|--------|-------|-------|
+| ☿ Mercury — 6s/orbit ⚡ | **JavaScript / TypeScript** | `warp.drive()` | 🟩🟩🟩🟩⬛ Fast everywhere |
+| ♀ Venus — 11s/orbit ✨ | **Python** | `import universe` | 🟩🟩🟩🟩⬛ Clean problem-solver |
+| 🌍 Earth+Moon — 17s/orbit 🏠 | **React + HTML/CSS** | `<Home planet />` | 🟩🟩🟩🟩⬛ Where users live |
+| ♂ Mars — 24s/orbit 🔴 | **Node.js + Git** | `push --to-mars` | 🟩🟩🟩⬛⬛ Backend warrior |
+| ☄ Belt — 55s/orbit 💥 | **Docker + Linux + Tools** | `asteroids.handle()` | 🟩🟩🟩⬛⬛ Debris? No — infra |
+| ♄ Saturn — 34s/orbit 👑 | **Flutter + Firebase** | `king.deploy()` | 🟩🟩🟩⬛⬛ Ringed ecosystem |
+| 🛸 UFO — random 👽 | **System Design** | `abduct(complexity)` | 🟩🟩⬛⬛⬛ Beaming up knowledge |
 
-> الشمس في النص مكتوب عليها **CODE** — كل الكواكب بتلف حواليها. زي شغلي بالظبط.
+> الشمس في النص مكتوب عليها **CODE** — كل الكواكب + حزام الكويكبات + الـ UFO بيلفوا حواليها. السرعة في الجدول = سرعة اللف الحقيقية في الصورة فوق.
 
 ---
 
@@ -101,14 +103,6 @@ const commander = {
 </p>
 
 > 🤖 Auto-fed every 12h by GitHub Actions. If the snake is missing, check the Actions tab — first run needs manual trigger.
-
----
-
-### 😂 Deep-Space Humor Decryptor
-
-<p align="center">
-  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder&bgColor=0D1117&qColor=7DF9FF&aColor=FFFFFF" alt="joke" />
-</p>
 
 ---
 

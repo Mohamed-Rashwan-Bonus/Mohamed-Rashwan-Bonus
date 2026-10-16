@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480">
   <defs>
     <radialGradient id="sunCore" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#FFF7AD"/>
@@ -21,7 +21,19 @@
       <stop offset="60%" stop-color="#E8B86A"/>
       <stop offset="100%" stop-color="#8A5A00"/>
     </radialGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <radialGradient id="nebulaP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7CFC00" stop-opacity=".8"/>
+      <stop offset="100%" stop-color="#7CFC00" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="6" result="b"/>
       <feMerge>
         <feMergeNode in="b"/>
@@ -30,106 +42,162 @@
     </filter>
   </defs>
 
-  <rect x="0" y="0" width="800" height="420" rx="20" fill="#0D1117"/>
-  <rect x="0" y="0" width="800" height="420" rx="20" fill="none" stroke="#21262D" stroke-width="2"/>
+  <rect x="0" y="0" width="800" height="480" rx="20" fill="#0D1117"/>
+  <!-- nebulas -->
+  <ellipse cx="160" cy="120" rx="220" ry="140" fill="url(#nebulaP)"/>
+  <ellipse cx="660" cy="360" rx="240" ry="150" fill="url(#nebulaC)"/>
+  <ellipse cx="620" cy="90" rx="150" ry="90" fill="url(#nebulaP)" opacity=".6"/>
+  <rect x="0" y="0" width="800" height="480" rx="20" fill="none" stroke="#7C3AED" stroke-width="2" opacity=".5"/>
 
   <!-- stars -->
   <g fill="#FFFFFF">
-    <circle cx="40" cy="50" r="1.6"><animate attributeName="opacity" values="1;.15;1" dur="2.1s" repeatCount="indefinite"/></circle>
-    <circle cx="120" cy="300" r="1.3"><animate attributeName="opacity" values="1;.2;1" dur="1.7s" repeatCount="indefinite"/></circle>
-    <circle cx="200" cy="80" r="1.8"><animate attributeName="opacity" values="1;.1;1" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="260" cy="350" r="1.2"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></circle>
-    <circle cx="330" cy="40" r="1.5"><animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="480" cy="60" r="1.7"><animate attributeName="opacity" values="1;.1;1" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="560" cy="330" r="1.4"><animate attributeName="opacity" values="1;.2;1" dur="1.9s" repeatCount="indefinite"/></circle>
-    <circle cx="640" cy="90" r="1.6"><animate attributeName="opacity" values="1;.15;1" dur="2.2s" repeatCount="indefinite"/></circle>
-    <circle cx="710" cy="250" r="1.8"><animate attributeName="opacity" values="1;.1;1" dur="2.6s" repeatCount="indefinite"/></circle>
-    <circle cx="760" cy="140" r="1.3"><animate attributeName="opacity" values="1;.3;1" dur="1.6s" repeatCount="indefinite"/></circle>
-    <circle cx="90" cy="180" r="1.1"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></circle>
-    <circle cx="600" cy="200" r="1.1"><animate attributeName="opacity" values="1;.25;1" dur="1.5s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="360" r="1.5"><animate attributeName="opacity" values="1;.15;1" dur="2.9s" repeatCount="indefinite"/></circle>
-    <circle cx="30" cy="360" r="1.4"><animate attributeName="opacity" values="1;.2;1" dur="2.3s" repeatCount="indefinite"/></circle>
-    <circle cx="420" cy="370" r="1.6"><animate attributeName="opacity" values="1;.1;1" dur="2.7s" repeatCount="indefinite"/></circle>
-    <!-- plus signs -->
-    <text x="150" y="150" fill="#7DF9FF" font-size="14" opacity=".7">+<animate attributeName="opacity" values=".7;.1;.7" dur="3s" repeatCount="indefinite"/></text>
-    <text x="670" y="320" fill="#C084FC" font-size="16" opacity=".7">+<animate attributeName="opacity" values=".7;.1;.7" dur="2.2s" repeatCount="indefinite"/></text>
-    <text x="520" y="130" fill="#7DF9FF" font-size="12" opacity=".6">✦<animate attributeName="opacity" values=".6;.1;.6" dur="2.5s" repeatCount="indefinite"/></text>
+    <circle cx="40" cy="50" r="1.8"><animate attributeName="opacity" values="1;.15;1" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle cx="120" cy="330" r="1.4"><animate attributeName="opacity" values="1;.2;1" dur="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="90" r="2"><animate attributeName="opacity" values="1;.1;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="260" cy="400" r="1.3"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="50" r="1.6"><animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="480" cy="60" r="1.8"><animate attributeName="opacity" values="1;.1;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="560" cy="380" r="1.5"><animate attributeName="opacity" values="1;.2;1" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="100" r="1.7"><animate attributeName="opacity" values="1;.15;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="715" cy="260" r="2"><animate attributeName="opacity" values="1;.1;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="150" r="1.4"><animate attributeName="opacity" values="1;.3;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle cx="90" cy="200" r="1.2"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="210" r="1.2"><animate attributeName="opacity" values="1;.25;1" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="410" r="1.6"><animate attributeName="opacity" values="1;.15;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="30" cy="400" r="1.5"><animate attributeName="opacity" values="1;.2;1" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="430" r="1.7"><animate attributeName="opacity" values="1;.1;1" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="240" cy="240" r="1.2"><animate attributeName="opacity" values="1;.2;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="740" cy="330" r="1.3"><animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="500" cy="430" r="1.4"><animate attributeName="opacity" values="1;.15;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <text x="150" y="160" fill="#7DF9FF" font-size="15" opacity=".8">✦<animate attributeName="opacity" values=".8;.1;.8" dur="3s" repeatCount="indefinite"/></text>
+    <text x="670" y="350" fill="#C084FC" font-size="17" opacity=".8">✦<animate attributeName="opacity" values=".8;.1;.8" dur="2.2s" repeatCount="indefinite"/></text>
+    <text x="520" y="140" fill="#7DF9FF" font-size="13" opacity=".7">✦<animate attributeName="opacity" values=".7;.1;.7" dur="2.5s" repeatCount="indefinite"/></text>
+    <text x="300" y="120" fill="#FFD93D" font-size="12" opacity=".7">✧<animate attributeName="opacity" values=".7;.15;.7" dur="1.9s" repeatCount="indefinite"/></text>
   </g>
 
-  <!-- shooting star -->
+  <!-- comets -->
   <g opacity="0">
-    <circle r="3" fill="#7DF9FF" filter="url(#glow)">
-      <animateMotion dur="4s" repeatCount="indefinite" path="M -30 90 Q 400 30 830 110"/>
+    <circle r="3.5" fill="#7DF9FF" filter="url(#glow)">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M -30 90 Q 400 30 830 110"/>
     </circle>
-    <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="5s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <circle r="2.5" fill="#C084FC" filter="url(#glow)">
+      <animateMotion dur="7s" begin="2s" repeatCount="indefinite" path="M 830 400 Q 400 340 -30 300"/>
+    </circle>
+    <animate attributeName="opacity" values="0;1;1;0" dur="7s" begin="2s" repeatCount="indefinite"/>
   </g>
 
   <!-- orbits -->
-  <g fill="none" stroke="#30363D" stroke-width="1" stroke-dasharray="4 5" opacity=".8">
-    <circle cx="400" cy="210" r="58"/>
-    <circle cx="400" cy="210" r="88"/>
-    <circle cx="400" cy="210" r="122"/>
-    <circle cx="400" cy="210" r="158"/>
-    <circle cx="400" cy="210" r="196"/>
+  <g fill="none" stroke="#3B4252" stroke-width="1.2" stroke-dasharray="5 6" opacity=".9">
+    <circle cx="400" cy="240" r="58"/>
+    <circle cx="400" cy="240" r="88"/>
+    <circle cx="400" cy="240" r="122"/>
+    <circle cx="400" cy="240" r="158"/>
+    <circle cx="400" cy="240" r="196"/>
   </g>
 
-  <!-- sun -->
-  <circle cx="400" cy="210" r="46" fill="url(#sunCore)" filter="url(#glow)">
-    <animate attributeName="r" values="46;49;46" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="400" cy="210" r="26" fill="#FFD93D"/>
-  <circle cx="400" cy="210" r="26" fill="none" stroke="#FFF7AD" stroke-width="2" opacity=".8"/>
-  <text x="400" y="216" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#7A2E00">CODE</text>
-
-  <!-- mercury : fast -->
+  <!-- sun with rotating rays -->
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="0 400 210" to="360 400 210" dur="6s" repeatCount="indefinite"/>
-    <circle cx="458" cy="210" r="6" fill="#9AA0A6"/>
-    <circle cx="456" cy="208" r="1.5" fill="#6B7280"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 400 240" to="360 400 240" dur="40s" repeatCount="indefinite"/>
+    <g stroke="#FFD93D" stroke-width="3" opacity=".55" stroke-linecap="round">
+      <line x1="400" y1="172" x2="400" y2="156"/>
+      <line x1="400" y1="308" x2="400" y2="324"/>
+      <line x1="332" y1="240" x2="316" y2="240"/>
+      <line x1="468" y1="240" x2="484" y2="240"/>
+      <line x1="352" y1="192" x2="341" y2="181"/>
+      <line x1="448" y1="192" x2="459" y2="181"/>
+      <line x1="352" y1="288" x2="341" y2="299"/>
+      <line x1="448" y1="288" x2="459" y2="299"/>
+    </g>
+  </g>
+  <circle cx="400" cy="240" r="48" fill="url(#sunCore)" filter="url(#glow)">
+    <animate attributeName="r" values="48;52;48" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="240" r="27" fill="#FFD93D"/>
+  <circle cx="400" cy="240" r="27" fill="none" stroke="#FFF7AD" stroke-width="2" opacity=".9"/>
+  <text x="400" y="246" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#7A2E00">CODE</text>
+
+  <!-- mercury -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 400 240" to="360 400 240" dur="6s" repeatCount="indefinite"/>
+    <circle cx="458" cy="240" r="6.5" fill="#9AA0A6" filter="url(#glow)"/>
+    <circle cx="456" cy="238" r="1.6" fill="#6B7280"/>
   </g>
 
   <!-- venus -->
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="90 400 210" to="450 400 210" dur="11s" repeatCount="indefinite"/>
-    <circle cx="488" cy="210" r="9" fill="#FFB86B"/>
-    <ellipse cx="488" cy="210" rx="9" ry="4" fill="#FFD9A0" opacity=".5"/>
+    <animateTransform attributeName="transform" type="rotate" from="90 400 240" to="450 400 240" dur="11s" repeatCount="indefinite"/>
+    <circle cx="488" cy="240" r="9.5" fill="#FFB86B" filter="url(#glow)"/>
+    <ellipse cx="488" cy="240" rx="9.5" ry="4" fill="#FFD9A0" opacity=".5"/>
   </g>
 
   <!-- earth + moon -->
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="200 400 210" to="560 400 210" dur="17s" repeatCount="indefinite"/>
-    <circle cx="522" cy="210" r="12" fill="url(#earthG)" stroke="#7DF9FF" stroke-width="1.5"/>
-    <path d="M 513 206 Q 520 202 528 207" stroke="#7CFC00" stroke-width="2.5" fill="none" opacity=".9"/>
-    <path d="M 514 215 Q 522 219 529 214" stroke="#7CFC00" stroke-width="2" fill="none" opacity=".7"/>
+    <animateTransform attributeName="transform" type="rotate" from="200 400 240" to="560 400 240" dur="17s" repeatCount="indefinite"/>
+    <circle cx="522" cy="240" r="13" fill="url(#earthG)" stroke="#7DF9FF" stroke-width="2" filter="url(#glow)"/>
+    <path d="M 512 236 Q 520 231 529 237" stroke="#7CFC00" stroke-width="2.5" fill="none" opacity=".9"/>
+    <path d="M 513 245 Q 522 250 530 244" stroke="#7CFC00" stroke-width="2" fill="none" opacity=".7"/>
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0 522 210" to="360 522 210" dur="3s" repeatCount="indefinite"/>
-      <circle cx="540" cy="210" r="3.5" fill="#E5E7EB"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 522 240" to="360 522 240" dur="3s" repeatCount="indefinite"/>
+      <circle cx="542" cy="240" r="3.5" fill="#E5E7EB" filter="url(#glow)"/>
     </g>
   </g>
 
   <!-- mars -->
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="300 400 210" to="660 400 210" dur="24s" repeatCount="indefinite"/>
-    <circle cx="558" cy="210" r="8" fill="url(#marsG)"/>
-    <ellipse cx="558" cy="204" rx="8" ry="3" fill="#FFFFFF" opacity=".7"/>
+    <animateTransform attributeName="transform" type="rotate" from="300 400 240" to="660 400 240" dur="24s" repeatCount="indefinite"/>
+    <circle cx="558" cy="240" r="8.5" fill="url(#marsG)" filter="url(#glow)"/>
+    <ellipse cx="558" cy="233" rx="8.5" ry="3" fill="#FFFFFF" opacity=".7"/>
   </g>
 
-  <!-- saturn : slow king -->
+  <!-- asteroid belt -->
+  <g fill="#8B949E">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 240" to="360 400 240" dur="55s" repeatCount="indefinite"/>
+      <circle cx="577" cy="240" r="2"/><circle cx="560" cy="300" r="1.6"/><circle cx="510" cy="360" r="2.2"/>
+      <circle cx="440" cy="385" r="1.5"/><circle cx="360" cy="375" r="2"/><circle cx="300" cy="330" r="1.4"/>
+      <circle cx="260" cy="270" r="2.1"/><circle cx="250" cy="200" r="1.5"/><circle cx="290" cy="130" r="2"/>
+      <circle cx="360" cy="90" r="1.6"/><circle cx="450" cy="75" r="2.2"/><circle cx="530" cy="110" r="1.4"/>
+    </g>
+  </g>
+
+  <!-- saturn king -->
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="140 400 210" to="500 400 210" dur="34s" repeatCount="indefinite"/>
-    <ellipse cx="596" cy="210" rx="26" ry="9" fill="none" stroke="#E8C97A" stroke-width="4" opacity=".9" transform="rotate(-18 596 210)"/>
-    <ellipse cx="596" cy="210" rx="26" ry="9" fill="none" stroke="#FFF3C4" stroke-width="1.5" opacity=".9" transform="rotate(-18 596 210)"/>
-    <circle cx="596" cy="210" r="15" fill="url(#saturnG)"/>
+    <animateTransform attributeName="transform" type="rotate" from="140 400 240" to="500 400 240" dur="34s" repeatCount="indefinite"/>
+    <ellipse cx="596" cy="240" rx="28" ry="10" fill="none" stroke="#E8C97A" stroke-width="4.5" opacity=".95" transform="rotate(-18 596 240)"/>
+    <ellipse cx="596" cy="240" rx="28" ry="10" fill="none" stroke="#FFF3C4" stroke-width="1.5" opacity=".9" transform="rotate(-18 596 240)"/>
+    <circle cx="596" cy="240" r="16" fill="url(#saturnG)" filter="url(#glow)"/>
+    <circle cx="591" cy="235" r="4" fill="#FFF3C4" opacity=".6"/>
   </g>
 
-  <!-- labels -->
-  <g font-family="monospace" font-size="11" fill="#8B949E" text-anchor="middle">
-    <text x="400" y="395">☿ MERCURY · ♀ VENUS · 🌍 EARTH · ♂ MARS · ♄ SATURN — all orbiting CODE</text>
-  </g>
-
-  <!-- rocket flying -->
+  <!-- UFO -->
   <g>
-    <animateMotion dur="9s" repeatCount="indefinite" path="M -60 350 Q 250 300 450 180 T 860 60"/>
-    <text font-size="26" text-anchor="middle">🚀</text>
+    <animateMotion dur="14s" repeatCount="indefinite" path="M -80 120 Q 200 90 420 130 T 880 100"/>
+    <polygon points="0,10 30,10 20,44 -20,44" fill="url(#beam)" opacity=".7">
+      <animate attributeName="opacity" values=".7;.25;.7" dur="1.6s" repeatCount="indefinite"/>
+    </polygon>
+    <ellipse cx="0" cy="0" rx="26" ry="10" fill="#9AA0A6" stroke="#E5E7EB" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-8" rx="11" ry="9" fill="#7DF9FF" opacity=".9"/>
+    <circle cx="-14" cy="2" r="2.5" fill="#FF6B6B"><animate attributeName="opacity" values="1;.2;1" dur=".8s" repeatCount="indefinite"/></circle>
+    <circle cx="0" cy="3" r="2.5" fill="#7CFC00"><animate attributeName="opacity" values="1;.2;1" dur=".8s" begin=".3s" repeatCount="indefinite"/></circle>
+    <circle cx="14" cy="2" r="2.5" fill="#FFD93D"><animate attributeName="opacity" values="1;.2;1" dur=".8s" begin=".6s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- astronaut drifting -->
+  <g>
+    <animateMotion dur="11s" repeatCount="indefinite" path="M 120 380 q 25 -18 50 0 q -25 18 -50 0"/>
+    <text font-size="24" text-anchor="middle">👨‍🚀<animateTransform attributeName="transform" type="rotate" values="-8 0 0;8 0 0;-8 0 0" dur="4s" repeatCount="indefinite"/></text>
+  </g>
+
+  <!-- rocket -->
+  <g>
+    <animateMotion dur="9s" repeatCount="indefinite" path="M -60 420 Q 250 360 450 210 T 860 60"/>
+    <text font-size="28" text-anchor="middle">🚀</text>
+  </g>
+
+  <g font-family="monospace" font-size="11.5" fill="#8B949E" text-anchor="middle">
+    <text x="400" y="462">☿ MERCURY · ♀ VENUS · 🌍 EARTH+MOON · ♂ MARS · ☄ BELT · ♄ SATURN · 🛸 UFO — all orbiting CODE</text>
   </g>
 </svg>
