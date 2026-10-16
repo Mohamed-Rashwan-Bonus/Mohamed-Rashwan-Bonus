@@ -1,7 +1,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=MOHAMED+RASHWAN&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=🛸+INTERSTELLAR+SOFTWARE+COMMANDER&descAlignY=60&descSize=17" />
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=800&color=7DF9FF&center=true&vCenter=true&width=700&lines=🛸+Incoming+transmission+from+deep+space...;👨‍🚀+I+turn+coffee+into+spacecraft(code);🚀+Team+Lead+@+team-collaboration;🪐+6+astronauts+already+aboard;⚡+My+commits+travel+faster+than+light;👽+Exploring+new+galaxies+of+software" alt="Typing" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=800&color=7DF9FF&center=true&vCenter=true&width=700&lines=🛸+Incoming+transmission+from+deep+space...;👨‍🚀+I+turn+coffee+into+spacecraft(code);⚡+My+commits+travel+faster+than+light;👽+Exploring+new+galaxies+of+software" alt="Typing" />
 </p>
 
 <p align="center">
@@ -11,7 +11,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Mohamed-Rashwan-Bonus/team-collaboration"><img src="https://img.shields.io/badge/🚀_COMMAND_SHIP-team--collaboration-7C3AED?style=for-the-badge" /></a>
   <a href="https://github.com/Mohamed-Rashwan-Bonus?tab=repositories"><img src="https://img.shields.io/badge/🪐_EXPLORE-all--galaxies-06B6D4?style=for-the-badge" /></a>
 </p>
 
@@ -25,10 +24,8 @@ const commander = {
   callsign: "Deep-Space Commander 👨‍🚀",
   planet: "Earth 🌍",
   orbit: "Clean Code 🛰️",
-  crew: ["@omargomaa78", "@mohamedabdallahalsayed-code", "@alikhaled007", "@rahmamkamal14", "@haneenaiman9-alt"],
-  flagship: "team-collaboration 🚀",
   mission: "Ship software that survives re-entry (production)",
-  dailyRoutine: ["☕ refuel", "💻 launch code", "🔭 review PRs", "🪐 mentor crew", "😴 re-enter atmosphere"],
+  dailyRoutine: ["☕ refuel", "💻 launch code", "🔭 review PRs", "😴 re-enter atmosphere"],
   warpSpeed: "∞ commits / day"
 };
 ```
@@ -101,10 +98,9 @@ const commander = {
 
 ```
    ✨  .  🚀  .  ✨  .  🪐  .  ✨
-  STARLOG 2026.10.16 — crew of 6 assembled ✔
-  FLAGSHIP team-collaboration launched ✔
+  STARLOG 2026.10.16 — systems online ✔
   SNAKE deployed to guard contributions ✔
-  NEXT: first crew PR merged → release v1.0
+  NEXT: ship something legendary → v1.0
    ✨  .  🛸  .  ✨  .  ⭐  .  ✨
 ```
 
@@ -113,7 +109,6 @@ const commander = {
 ### 🛰️ Open a Wormhole
 
 <p align="center">
-  <a href="https://github.com/Mohamed-Rashwan-Bonus/team-collaboration">🚀 Board the flagship</a> •
   <a href="https://github.com/Mohamed-Rashwan-Bonus?tab=repositories">🪐 All galaxies</a> •
   <a href="https://github.com/Mohamed-Rashwan-Bonus/Mohamed-Rashwan-Bonus">👽 Transmission source</a>
 </p>
