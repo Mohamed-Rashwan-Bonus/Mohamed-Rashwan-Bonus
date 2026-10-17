@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Mohamed-Rashwan-Bonus&style=for-the-badge&color=2563EB&label=VISITORS" />
+  <img src="https://api.visitorbadge.io/api/visitors?path=Mohamed-Rashwan-Bonus&label=VISITORS&labelColor=%23555555&countColor=%232563EB" />
   <img src="https://img.shields.io/github/followers/Mohamed-Rashwan-Bonus?style=for-the-badge&color=2563EB&label=FOLLOWERS&logo=github" />
 </p>
 
