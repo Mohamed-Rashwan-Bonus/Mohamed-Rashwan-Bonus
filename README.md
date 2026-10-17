@@ -86,11 +86,9 @@ const commander = {
 
 <p align="center">
   <a href="https://open.spotify.com/user/31gducr4im6f6vcm5cimisqeetjy?si=8ed57b73d9534920">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=31gducr4im6f6vcm5cimisqeetjy&count=5&unique=true" alt="Spotify Recently Played" />
+    <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=31gducr4im6f6vcm5cimisqeetjy" alt="Spotify Recently Played" />
   </a>
 </p>
-
-> 🎧 آخر أغاني اتسمعت على سبوتيفاي — لو ظهرلك "authorization needed" سجل من هنا: https://spotify-recently-played.jeffreyca.workers.dev
 
 ---
 
