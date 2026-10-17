@@ -82,6 +82,18 @@ const commander = {
 
 ---
 
+### 🎵 Now Transmitting From My Spaceship
+
+<p align="center">
+  <a href="https://open.spotify.com/user/31gducr4im6f6vcm5cimisqeetjy?si=8ed57b73d9534920">
+    <img src="https://spotify-github-profile.vercel.app/api/view?uid=31gducr4im6f6vcm5cimisqeetjy&cover_image=true&theme=tokyonight&show_offline=false&background_color=0d1117&interchange=false&bar_color=7df9ff&bar_color_cover=true" alt="Spotify Now Playing" />
+  </a>
+</p>
+
+> 🎧 الأغنية اللي بتسمعها دلوقتي على سبوتيفاي — بتتحدث لحظياً. لو مش شغال افتح سبوتيفاي وشغل أي حاجة.
+
+---
+
 ### 📈 Activity Warp-Graph
 
 <p align="center">
