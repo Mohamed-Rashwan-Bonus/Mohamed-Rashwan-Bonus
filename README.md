@@ -1,7 +1,7 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=MOHAMED+RASHWAN&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=🛸+INTERSTELLAR+SOFTWARE+COMMANDER&descAlignY=60&descSize=17" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=MOHAMED+RASHWAN&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc==60&descSize=17" />
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=800&color=7DF9FF&center=true&vCenter=true&width=700&lines=🛸+Incoming+transmission+from+deep+space...;👨‍🚀+I+turn+coffee+into+spacecraft(code);⚡+My+commits+travel+faster+than+light;👽+Exploring+new+galaxies+of+software" alt="Typing" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=800&color=7DF9FF&center=true&vCenter=true&width=700&lines=🛸+Incoming+transmission+from+deep+space...;+I+turn+coffee+into+spacecraft(code);⚡+My+commits+travel+faster+than+light;👽+Exploring+new+galaxies+of+software" alt="Typing" />
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@
 ```js
 const commander = {
   name: "Mohamed Rashwan",
-  callsign: "Deep-Space Commander 👨‍🚀",
+  callsign: "Deep-Space Commander ",
   planet: "Earth 🌍",
   orbit: "Clean Code 🛰️",
   mission: "Ship software that survives re-entry (production)",
