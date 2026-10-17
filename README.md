@@ -51,7 +51,7 @@ hobbies:
 ## 📈 Activity Graph
 
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph-henna.vercel.app/graph?username=Mohamed-Rashwan-Bonus&color=2563EB&line=2563EB&point=1E3A8A&area=true&hide_border=true&custom_title=My%20Contribution%20Graph" alt="Activity Graph" />
+  <img width="100%" src="https://activity-graph.vercel.app/graph?username=Mohamed-Rashwan-Bonus&bg_color=00000000&color=2563EB&line=2563EB&point=1E3A8A&area=true&hide_border=true&custom_title=My%20Contribution%20Graph" alt="Activity Graph" />
 </p>
 
 ---
